@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Internships</title>
+<style>
+		
+		 .inner-wrap .mbt {
+	max-width: 1200px;
+	margin: 40px auto 0 auto;
+}
+.inner-wrap .container {
+	width: 100% !important;
+	padding: 0;
+}
+.inner-wrap .sectionBlock {
+	border: none;
+	border-radius: 0;
+	font-size: 14px;
+	margin-bottom: 0;
+}
+.inner-wrap .sectionContent {
+	padding: 0;
+}
+.inner-wrap .clear {
+	display: none;
+}
+  /*
+ ______  ______  ______  ______  ______  ______  
+/\  ___\/\  __ \/\  == \/\  __ \/\  == \/\__  _\ 
+\ \ \___\ \ \/\ \ \  _-/\ \  __ \ \  __<\/_/\ \/ 
+ \ \_____\ \_____\ \_\   \ \_\ \_\ \_\ \_\ \ \_\ 
+  \/_____/\/_____/\/_/    \/_/\/_/\/_/ /_/  \/_/ 
+*/
+/* PRIMARIES */
+/* GREYS */
+/* BABY BLUES */
+/* BLUE RAMP */
+/* FUNDAMENTALS */
+p:last-of-type {
+  margin-bottom: 32px; }
+
+.internship-wrapper h1 {
+  color: #676F7C; }
+.internship-wrapper p {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: #676F7C; }
+
+/* MIXINS */
+.center-content {
+  text-align: center; }
+
+.background {
+  background-color: #F4FAFF; }
+
+.background-two {
+  background-color: #E1EDFF; }
+
+/* SLIDER */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.slider {
+  height: 400px;
+  background-color: #F4FAFF;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .slider img {
+    width: 300px;
+    height: auto; }
+
+.slider__nav {
+  width: 32px;
+  height: 8px;
+  margin: 48px 12px 24px 12px;
+  border-radius: 50%;
+  z-index: 10;
+  outline: 6px solid #ccc;
+  outline-offset: -6px;
+  box-shadow: 0 0 0 0 #333, 0 0 0 0 rgba(51, 51, 51, 0);
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.slider__nav:checked {
+  -webkit-animation: check 0.4s linear forwards;
+  animation: check 0.4s linear forwards; }
+
+.slider__nav:checked:nth-of-type(1) ~ .slider__inner {
+  left: 0%; }
+
+.slider__nav:checked:nth-of-type(2) ~ .slider__inner {
+  left: -100%; }
+
+.slider__nav:checked:nth-of-type(3) ~ .slider__inner {
+  left: -200%; }
+
+.slider__nav:checked:nth-of-type(4) ~ .slider__inner {
+  left: -300%; }
+
+.slider__inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  height: 100%;
+  -webkit-transition: left 0.4s;
+  transition: left 0.4s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row nowrap;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap; }
+
+.slider__contents {
+  height: 100%;
+  padding: 2rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly; }
+  .slider__contents img {
+    width: 250px; }
+
+.slider__caption {
+  font-weight: 500;
+  margin: 2rem 0 1rem; }
+
+.slider__txt {
+  color: #3A4352;
+  max-width: 400px; }
+
+@-webkit-keyframes check {
+  50% {
+    outline-color: #0D5DB8;
+    box-shadow: 0 0 0 12px #0185FE, 0 0 0 36px rgba(51, 51, 51, 0.2); }
+  100% {
+    outline-color: #0D5DB8;
+    box-shadow: 0 0 0 0 #0185FE, 0 0 0 0 rgba(51, 51, 51, 0); } }
+@keyframes check {
+  50% {
+    outline-color: #0D5DB8;
+    box-shadow: 0 0 0 12px #0185FE, 0 0 0 36px rgba(51, 51, 51, 0.2); }
+  100% {
+    outline-color: #0D5DB8;
+    box-shadow: 0 0 0 0 #0185FE, 0 0 0 0 rgba(51, 51, 51, 0); } }
+/* PAGE CLASSES */
+.internship-hero {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("content/internship-hero.png");
+  margin-top: -20px; }
+  .internship-hero h1 {
+    color: white;
+    padding-top: 120px;
+    padding-left: 140px;
+    font-size: 36px; }
+  .internship-hero h2 {
+    color: white;
+    padding-left: 140px;
+    font-weight: 500;
+    font-size: 22px;
+    margin-top: 10px; }
+
+.intern-intro {
+  text-align: center;
+  width: 100%;
+  max-width: 750px;
+  margin: auto;
+  margin-top: 80px;
+  margin-bottom: 40px; }
+
+.intern-button {
+  color: white;
+  background-color: #0D5DB8;
+  border-radius: 6px;
+  padding: 12px 32px;
+  font-size: 15px;
+  font-weight: 700;
+  transition-timing-function: ease-in-out;
+  transition-duration: .3s;
+  margin-top: 24px; }
+  .intern-button:hover {
+    background-color: #0185FE;
+    color: white;
+    text-decoration: none; }
+
+.blue-text {
+  color: #0D5DB8; }
+
+.flex-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .flex-section img {
+    width: 400px; }
+
+.flex-intern {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 80px;
+  width: 80%;
+  margin: auto; }
+
+.flex-text {
+  max-width: 400px; }
+
+.flex-img {
+  padding-top: 40px;
+  padding-bottom: 40px; }
+
+.flex-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  width: 65%;
+  margin: auto;
+  font-size: 15px; }
+  .flex-nav a {
+    font-weight: 600; }
+  .flex-nav p {
+    color: #3A4352;
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0; }
+
+.intern-slider {
+  width: 100%;
+  background-color: #F4FAFF;
+  min-height: 350px; }
+
+.glyphicon-chevron-right {
+  color: #0D5DB8; }
+
+.glyphicon-chevron-left {
+  color: #0D5DB8; }
+
+.carousel-control.right {
+  top: 50%; }
+  .carousel-control.right img {
+    width: 12px; }
+
+.carousel-control.left {
+  top: 50%; }
+  .carousel-control.left img {
+    width: 12px; }
+
+/* MEDIA QUERIES */
+@media only screen and (max-width: 1920px) {
+  .flex-nav {
+    width: auto; } }
+@media only screen and (max-width: 850px) {
+  .flex-item {
+    margin: 24px; }
+
+  .flex-text {
+    text-align: center;
+    margin-bottom: 40px; }
+
+  .flex-nav {
+    width: 90%;
+    align-items: center;
+    justify-content: center; }
+
+  .internship-hero h1 {
+    padding-left: 24px;
+    font-size: 24px;
+    margin-bottom: 0; }
+  .internship-hero h2 {
+    padding-left: 24px;
+    font-size: 18px;
+    margin-top: 16px; }
+
+  .intern-intro {
+    width: 90%; }
+
+  .flex-img img {
+    width: 250px; } }
+
+
+	</style>
+</head>
+
+<body>
+	<div class="internship-wrapper">
+<div class="internship-hero">
+	<h1>Internships at Copart</h1>
+	<h2>Learn Valuable Skills While You Earn Your Degree</h2>
+	
+	</div>
+	
+	<div class="intern-intro">
+	<p>Copart is proud to offer opportunities for college students who are looking to kick their skills into high gear. Our internship program at Copart's world headquarters in Dallas, TX allows interns to acquire hands-on learning experience to better prepare them for their post-graduate careers.
+</p>
+		<a href="https://recruiting.adp.com/srccar/public/RTI.home?c=1214601&d=ExternalCareerSite" class="intern-button" target="_blank">Apply Now</a>
+	
+	</div>
+
+		<div class="intern-slider">
+		<section class="carousel-default">
+    <div id="carousel-default" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-default" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-default" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-default" data-slide-to="2" class=""></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <!-- NOTE: Bootstrap v4 changes class name to carousel-item -->
+		  
+		       <div class="item active">
+            <div class="slider__contents">
+		<img src="content/intern-1.png">
+		<div>
+      <h2 class="slider__caption">Meet Some of Our Interns</h2>
+      <p class="slider__txt">“If I could look back at myself 10 months ago and right now, I am really proud of who I've become.”</p>
+			<p class="blue-text" style="margin-left: 80px;"><em><strong>— Giri Prasad Allumalla</strong><br>
+				Software Engineering Intern</em></p>
+		</div>
+    </div>
+        </div>
+        <div class="item">
+       <div class="slider__contents">
+      	<img src="content/angela.png">
+		<div>
+      <h2 class="slider__caption">Meet Some of Our Interns</h2>
+      <p class="slider__txt">“I think it was definitely better for my learning experience to be exposed to talking to people from different countries...it was super challenging, but also super rewarding.”</p>
+			<p class="blue-text" style="margin-left: 80px;"><em><strong>— Angela Carrasco</strong><br>
+				International Marketing Intern</em></p>
+		</div>
+    </div>
+        </div>
+        <div class="item">
+          <div class="slider__contents">
+      	<img src="content/thomas.png">
+		<div>
+      <h2 class="slider__caption">Meet Some of Our Interns</h2>
+      <p class="slider__txt">“We really had to look at data that most interns would never get the chance to and really dig into the numbers to find trends.”</p>
+			<p class="blue-text" style="margin-left: 80px;"><em><strong>— Thomas Hopkins</strong><br>
+				CashForCars.com Content Marketing Intern</em></p>
+		</div>
+    </div>
+        </div>
+
+      </div>
+      <a class="left carousel-control" style="background-image: none;" href="#carousel-default" role="button" data-slide="prev">
+        <img alt="" class="sliderimg" data-entity-type="" data-entity-uuid="" src="/content/arrow-left.svg" />
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" style="background-image: none;" href="#carousel-default" role="button" data-slide="next">
+        <img alt="" class="sliderimg" data-entity-type="" data-entity-uuid="" src="/content/arrow-right.svg" /> 
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </section>
+		</div>
+
+		
+<!-- VIDEO SECTION -->
+		
+	<h1 class="center-content" style="margin-top: 40px;">Learn More from Our Copart Interns</h1>
+
+<div class="flex-section">
+	<div class="flex-item" style="order: 1;">
+<div><a data-target="#mkt_intern_video" data-thevideo="https://www.youtube.com/watch?v=mowKQRFfaOo" data-toggle="modal" href="#"><img alt="Software Engineers video icon" class="glow-button" data-entity-type="" data-entity-uuid="" src="/content/intern-vid-1.png" /></a><br />
+
+<div aria-hidden="true" aria-labelledby="mkt_intern_video" class="modal fade" id="mkt_intern_video" role="dialog" style="display: none;" tabindex="-1">
+<div class="modal-dialog"><!-- Modal content-->
+<div class="modal-content">
+<div class="modal-body">
+<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/mowKQRFfaOo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+	</div>
+	<div class="flex-item" style="order: 2;">
+<div><a data-target="#it_intern_video" data-thevideo="https://www.youtube.com/watch?v=i48083cO4yQ" data-toggle="modal" href="#"><img alt="Network Operations video icon" class="glow-button" data-entity-type="" data-entity-uuid="" src="/content/intern-vid-2.png" /></a><br />
+
+<div aria-hidden="true" aria-labelledby="it_intern_video" class="modal fade" id="it_intern_video" role="dialog" style="display: none;" tabindex="-1">
+<div class="modal-dialog"><!-- Modal content-->
+<div class="modal-content">
+<div class="modal-body">
+<div class="embed-responsive embed-responsive-16by9"><iframe width="560" height="315" src="https://www.youtube.com/embed/i48083cO4yQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+</div>
+</div>
+</div>
+		</div>
+	</div>
+	</div>
+	</div>
+
+	
+
+
+	<div class="background">
+	<div class="flex-intern">
+	<div class="flex-text">
+		<h1>IT Internships</h1>
+		<p>Most of Copart's technology is built in-house by some of Dallas' most talented IT professionals, allowing interns to see the beginning stages of projects and in some instances, getting to participate in development of our innovative technology.</p>
+		<a href="https://recruiting.adp.com/srccar/public/RTI.home?c=1214601&d=ExternalCareerSite" class="intern-button" target="_blank">Apply Now</a>
+		</div>
+		<div class="flex-img">
+		<img src="content/it-intern.png">
+		</div>
+	</div>
+	</div>
+	
+	<div class="flex-intern">
+		<div class="flex-img">
+		<img src="content/mkt-intern.png">
+		</div>
+	<div class="flex-text">
+		<h1>Marketing Internships</h1>
+		<p>The Marketing Department at Copart offers a variety of opportunities for interns to build their skills and find their passion in different areas of Marketing like Digital Marketing, Communications, SEO, Design, Social Media and more.</p>
+		<a href="https://recruiting.adp.com/srccar/public/RTI.home?c=1214601&d=ExternalCareerSite" class="intern-button" target="_blank">Apply Now</a>
+		</div>
+	</div>
+	
+	<div class="background" style="padding-top: 24px; padding-bottom: 40px;">
+		<div class="intern-intro center-content">
+	<p>We actively recruit and hire interns in and around the Dallas metroplex and also welcome upcoming or recent college graduates from throughout the United States to join Team Copart. What are you waiting for?</p>
+		<a href="https://recruiting.adp.com/srccar/public/RTI.home?c=1214601&d=ExternalCareerSite" class="intern-button" target="_blank">Apply Now</a>
+		</div>
+	</div>
+	
+	<div class="background-two">
+		<div class="flex-nav" style="padding: 16px 0">
+	<a href="https://www.copart.com/content/us/en/careers?intcmp=web_careers_internships_careershome">Copart Careers | </a>
+		<a href="https://www.copart.com/content/us/en/careers/benefits">&nbsp;Benefits |</a>
+		<a href="https://www.copart.com/content/us/en/careers/itjobs">&nbsp;IT Jobs | </a>
+		<p>&nbsp;Internships | </p>
+		<a href="https://www.copart.com/content/us/en/careers/leadership-development-program?intcmp=web_careers_internships_ldp">&nbsp;Leadership Development Program | </a>
+		<a href="https://www.copart.com/content/us/en/careers/continuing-education-at-copart?intcmp=web_careers_internships_education">&nbsp;Continuing Education | </a>
+		<a href="https://www.copart.com/content/us/en/careers/copart-celebrates-veterans?intcmp=web_careers_internships_veterans">&nbsp;Veterans</a>
+		</div>
+	</div>
+	<script>
+$('#mkt_intern_video').on('hide.bs.modal', function(e) {
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+});
+$('#it_intern_video').on('hide.bs.modal', function(e) {
+    var $if = $(e.delegateTarget).find('iframe');
+    var src = $if.attr("src");
+    $if.attr("src", '/empty.html');
+    $if.attr("src", src);
+});
+</script>
+		</div>
+</body>
+</html>
